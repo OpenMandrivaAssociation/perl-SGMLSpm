@@ -7,7 +7,6 @@ License:   	GPL
 URL:         	http://www.uottawa.ca/~dmeggins
 Requires:    	jade >= 1.2.1
 Requires:	perl
-Buildroot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 Source0:	ftp://cpan.perl.org/pub/perl/CPAN/modules/by-module/SGMLS/SGMLSpm-%{version}.tar.bz2
 
