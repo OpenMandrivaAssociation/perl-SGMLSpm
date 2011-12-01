@@ -21,13 +21,13 @@ find -type d | xargs chmod a+rx
 find -type f | xargs chmod a+r
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
-mkdir -p $RPM_BUILD_ROOT%{perl_vendorlib}
-make install_system BINDIR=$RPM_BUILD_ROOT%{_bindir} PERL5DIR=$RPM_BUILD_ROOT%{perl_vendorlib}
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{perl_vendorlib}
+make install_system BINDIR=%{buildroot}%{_bindir} PERL5DIR=%{buildroot}%{perl_vendorlib}
 
 %clean
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %{buildroot} 
 
 %files 
 %defattr (-,root,root)  
