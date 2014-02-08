@@ -1,7 +1,7 @@
 Summary:     	Perl library for parsing the output of nsgmls
 Name:        	perl-SGMLSpm
 Version:     	1.03ii
-Release:     	18
+Release:     	19
 Group:       	Publishing
 License:   	GPLv2
 Url:         	http://www.uottawa.ca/~dmeggins
