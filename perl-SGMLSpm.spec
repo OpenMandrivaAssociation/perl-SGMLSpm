@@ -1,11 +1,12 @@
 Summary:     	Perl library for parsing the output of nsgmls
 Name:        	perl-SGMLSpm
-Version:     	1.03ii
-Release:     	27
+Version:     	1.1
+Epoch:		1
+Release:     	1
 Group:       	Publishing
 License:   	GPLv2
-Url:         	http://www.uottawa.ca/~dmeggins
-Source0:	ftp://cpan.perl.org/pub/perl/CPAN/modules/by-module/SGMLS/SGMLSpm-%{version}.tar.bz2
+Url:         	http://search.cpan.org/dist/SGMLSpm/
+Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-%{version}.tar.gz
 BuildArch:	noarch
 Requires:    	openjade >= 1.2.1
 Requires:	perl
@@ -15,17 +16,17 @@ Perl programs can use the SGMLSpm module to help convert SGML, HTML or XML
 documents into new formats.
 
 %prep
-%setup -q -n SGMLSpm
-find -type d | xargs chmod a+rx
-find -type f | xargs chmod a+r
+%setup -q -n SGMLSpm-%{version}
+perl Makefile.PL INSTALLDIRS=vendor
+
+%build
+%make_build
 
 %install
-mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{perl_vendorlib}
-make install_system BINDIR=%{buildroot}%{_bindir} PERL5DIR=%{buildroot}%{perl_vendorlib}
+%make_install
 
 %files 
 %doc BUGS COPYING ChangeLog DOC/ README TODO elisp
 %{_bindir}/*
 %{perl_vendorlib}/*
-
+%{_mandir}/man3/*
