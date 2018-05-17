@@ -2,7 +2,7 @@ Summary:     	Perl library for parsing the output of nsgmls
 Name:        	perl-SGMLSpm
 Version:     	1.1
 Epoch:		1
-Release:     	1
+Release:     	2
 Group:       	Publishing
 License:   	GPLv2
 Url:         	http://search.cpan.org/dist/SGMLSpm/
@@ -24,6 +24,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %install
 %make_install
+ln -s sgmlspl.pl %{buildroot}%{_bindir}/sgmlspl
 
 %files 
 %doc BUGS COPYING ChangeLog DOC/ README TODO elisp
