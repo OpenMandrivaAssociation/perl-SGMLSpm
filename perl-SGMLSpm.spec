@@ -10,6 +10,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-%{version}.tar
 BuildArch:	noarch
 Requires:    	openjade >= 1.2.1
 Requires:	perl
+BuildRequires:	perl(ExtUtils::MakeMaker)
 
 %description
 Perl programs can use the SGMLSpm module to help convert SGML, HTML or XML
