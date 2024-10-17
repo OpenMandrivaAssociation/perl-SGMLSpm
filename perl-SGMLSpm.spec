@@ -5,7 +5,7 @@ Epoch:		1
 Release:     	7
 Group:       	Publishing
 License:   	GPLv2
-Url:         	http://search.cpan.org/dist/SGMLSpm/
+Url:         	https://search.cpan.org/dist/SGMLSpm/
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-%{version}.tar.gz
 BuildArch:	noarch
 Requires:    	openjade >= 1.2.1
