@@ -1,11 +1,10 @@
 Summary:     	Perl library for parsing the output of nsgmls
 Name:        	perl-SGMLSpm
 Version:     	1.1
-Epoch:		1
-Release:     	8
+Release:     	2
 Group:       	Publishing
 License:   	GPLv2
-Url:         	https://search.cpan.org/dist/SGMLSpm/
+Url:         	https://www.cpan.org/authors/id/R/RA/RAAB/
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-%{version}.tar.gz
 BuildArch:	noarch
 Requires:    	openjade >= 1.2.1
